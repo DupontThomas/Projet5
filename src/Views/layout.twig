@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <title>Suivi des Activités des Réseaux Sociaux</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {{ url.URL }}css/style.css">
+</head>
+<body>
+    <header>
+    <!-- Menu horizontal -->
+        <ul>
+            <li>Accueil</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Admin</li>
+        </ul>
+    </header>
+
+    <section>
+        {% block title %}Titre par défaut{% endblock %}
+    </section>
+
+    <section>
+    <!-- liste des posts suivis -->
+        {% block posts %}{% endblock %}
+    </section>
+
+    <section>
+    <!-- Formulaire pour ajouter un nouveau post à suivre -->
+        {% block form %}{% endblock %}
+    </section>
+
+    <footer>
+        <p> Cet outil a été superbement développé par Thomas DUPONT</p>
+    </footer>
+
+</body>
+</html>
